@@ -17,7 +17,7 @@ SPI_WriteEnable();
 	uint32_t dataSize = sizeof(data);
 	SPI_PageProgram(pageAddress, data, dataSize);
 	Print("Set Value:\n");
-	Print(1,data);
+	Print(data);
 	
 	//-***************************
 	uint32_t readAddress = 0x00000000; // Address to read from
